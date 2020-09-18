@@ -38,6 +38,7 @@ const signup = async (req: express.Request, res: express.Response) => {
         const payload = {
             user: {
                 id: newUser.rows[0].id,
+                username: newUser.rows[0].username,
             },
         };
 
