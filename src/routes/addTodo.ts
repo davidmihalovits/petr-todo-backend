@@ -8,7 +8,7 @@ const addTodo = async (req: any, res: express.Response) => {
             [
                 req.body.title,
                 req.body.description,
-                "#ffffff",
+                "#F5F5F5",
                 req.user.id,
                 req.user.username,
             ]
