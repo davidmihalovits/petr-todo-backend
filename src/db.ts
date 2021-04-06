@@ -8,11 +8,9 @@ const proConfig = process.env.DATABASE_URL; // heroku Postgres addon
 const pool = new Pool({
     connectionString:
         process.env.NODE_ENV === "production" ? proConfig : devConfig,
-            dialectOptions: {
                 ssl: {
                     rejectUnauthorized: false,
                 },
-            },
 });
 
 export default pool;
